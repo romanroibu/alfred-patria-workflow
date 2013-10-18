@@ -2,7 +2,7 @@
 require 'open-uri'
 require File.expand_path('alfredXML')
 
-query = ARGV[0] ? ARGV[0].strip : ""
+query = ARGV[0] ? ARGV[0].strip.downcase : ""
 
 # Fetch the HTML and parse it only when the query is empty
 # and save the results for further filtering
